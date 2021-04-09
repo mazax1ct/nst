@@ -1,0 +1,93 @@
+.footer
+  background-color: $color-grey-4
+  padding-top: 40px
+
+  @media(min-width: 1900px)
+    padding-top: 50px
+
+  &__inner
+    @media(min-width: 1024px)
+      display: flex
+      justify-content: space-between
+      margin-bottom: 50px
+
+  &__left
+    margin-bottom: 50px
+    text-align: center
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      text-align: left
+      width: 230px
+
+    @media(min-width: 1900px)
+      width: auto
+
+  &__logo
+    margin-bottom: 40px
+
+  &__contacts
+    margin-bottom: 50px
+
+  &__center
+    border-bottom: 1px solid rgba($color-grey-3, 0.2)
+    margin-left: -20px
+    margin-right: -20px
+    margin-bottom: 40px
+    padding-left: 20px
+    padding-right: 20px
+    padding-bottom: 40px
+    text-align: center
+
+    @media(min-width: 1024px)
+      border-bottom: none
+      margin-bottom: 0
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 0
+      padding-left: 0
+      padding-right: 0
+      padding-bottom: 0
+      text-align: left
+
+  &__menu-title
+    font-weight: 700
+    margin-bottom: 20px
+    text-transform: uppercase
+
+  &__right
+    margin-bottom: 40px
+    text-align: center
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+  &__logo-text
+    color: $color-grey-3
+
+    @media(min-width: 1024px)
+      display: none
+
+  &__bottom
+    color: $color-grey-3
+    font-size: 14px
+    line-height: 18px
+    padding-bottom: 40px
+    text-align: center
+
+    @media(min-width: 1024px)
+      border-top: 1px solid rgba($color-grey-3, 0.2)
+      padding-top: 20px
+      padding-bottom: 20px
+
+.footer-menu
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &__link
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline

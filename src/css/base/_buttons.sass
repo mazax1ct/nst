@@ -1,0 +1,29 @@
+.button
+  background-color: $primary-color
+  border: none
+  border-radius: 25px
+  color: $text-color
+  cursor: pointer
+  display: inline-block
+  font-family: 'Montserrat', Arial, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  padding: 13px 34px
+  text-decoration: none
+  text-align: center
+  text-transform: uppercase
+  transition: background-color 0.3s
+  vertical-align: middle
+
+  &:hover,
+  &:active
+    background-color: darken($primary-color, 10%)
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
