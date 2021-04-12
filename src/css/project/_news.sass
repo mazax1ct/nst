@@ -1,0 +1,90 @@
+.news-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1200px)
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1024px)
+      margin-bottom: 50px
+
+    @media(min-width: 1200px)
+      padding-left: 20px
+      padding-right: 20px
+
+    &:last-child
+      margin-bottom: 30px
+
+      @media(min-width: 1024px)
+        margin-bottom: 50px
+
+.news
+  &__link,
+  &__picture,
+  &__image,
+  &__title
+    display: block
+
+  &__link
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      .news__image
+        transform: scale(1.02)
+
+      .news__title
+        text-decoration: underline
+
+  &__picture,
+  &__image
+    width: 100%
+
+  &__picture
+    margin-bottom: 15px
+    overflow: hidden
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &__date-tags
+    display: flex
+    flex-wrap: wrap
+    font-size: 12px
+    line-height: 1.25
+    margin-bottom: 10px
+
+  &__date-tag
+    border: 1px solid $color-grey-2
+    border-radius: 15px
+    color: $color-grey-3
+    margin-right: 5px
+    margin-bottom: 5px
+    padding: 5px 19px 6px
+
+    @media(min-width: 1024px)
+      font-size: 14px
+      padding: 6px 22px
+
+  &__title
+    font-weight: 700
+
+    @media(min-width: 1024px)
+      font-size: 16px

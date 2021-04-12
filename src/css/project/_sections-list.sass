@@ -1,0 +1,83 @@
+.sections-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+
+  @media(min-width: 1200px)
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+
+
+  &__item
+    display: flex
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      grid-column-start: span 2
+      margin-bottom: 0
+
+    &:first-child
+      @media(min-width: 768px)
+        grid-row-start: span 2
+
+  &__link,
+  &__picture,
+  &__image
+    display: block
+
+  &__link
+    color: #fff
+    font-size: 16px
+    font-weight: 600
+    height: 100%
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    text-align: center
+
+    @media(min-width: 1900px)
+      font-size: 30px
+
+    &::after
+      background-color: rgba($text-color, 0.55)
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+
+    &:hover,
+    &:focus
+      .sections-list__image
+        transform: scale(1.02)
+
+      .sections-list__link-title
+        border-bottom-color: $primary-color
+
+  &__picture
+    height: 100%
+    overflow: hidden
+
+  &__image
+    height: 100%
+    object-fit: cover
+    transition: transform 0.3s
+    transform: scale(1)
+    width: 100%
+
+  &__link-title
+    border-bottom: 2px solid transparent
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    transition: border-bottom-color 0.3s
+    z-index: 2

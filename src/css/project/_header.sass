@@ -26,7 +26,6 @@
     width: 203px
 
     @media(min-width: 1024px)
-      //margin-right: 60px
       width: 230px
 
   &__menu-block
@@ -182,45 +181,55 @@
         margin-right: 90px
 
     &.root
-      .main-menu__link
+      //.main-menu__link
         position: relative
 
-        @media(min-width: 1024px)
-          padding-right: 28px
+      @media(min-width: 1024px)
+        padding-right: 28px
 
+      &::after
+        @media(min-width: 1024px)
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' width='18' height='18'%3E%3Cpath fill='%23101010' d='M9.4,12.6l6.1-6.1c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.3-0.2-0.5c-0.3-0.3-0.7-0.3-0.9,0L9,11.1L3.4,5.5c-0.3-0.3-0.7-0.3-0.9,0C2.3,5.6,2.2,5.8,2.2,5.9v0c0,0.2,0.1,0.3,0.2,0.5l6.1,6.1C8.8,12.8,9.2,12.8,9.4,12.6L9.4,12.6z'/%3E%3C/svg%3E")
+          background-color: transparent
+          background-position: 50% 50%
+          background-repeat: no-repeat
+          content: ''
+          height: 18px
+          left: auto
+          margin-top: 2px
+          position: absolute
+          right: 0
+          top: 50%
+          transform: translateY(-50%)
+          width: 18px
+
+      &:hover,
+      &:focus
         &::after
           @media(min-width: 1024px)
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' width='18' height='18'%3E%3Cpath fill='%23101010' d='M9.4,12.6l6.1-6.1c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.3-0.2-0.5c-0.3-0.3-0.7-0.3-0.9,0L9,11.1L3.4,5.5c-0.3-0.3-0.7-0.3-0.9,0C2.3,5.6,2.2,5.8,2.2,5.9v0c0,0.2,0.1,0.3,0.2,0.5l6.1,6.1C8.8,12.8,9.2,12.8,9.4,12.6L9.4,12.6z'/%3E%3C/svg%3E")
-            background-color: transparent
-            background-position: 50% 50%
-            background-repeat: no-repeat
-            content: ''
-            height: 18px
-            left: auto
-            margin-top: 2px
-            position: absolute
-            right: 0
-            top: 50%
-            transform: translateY(-50%)
-            width: 18px
+            transform: translateY(-50%) rotate(-180deg)
 
-        &:hover,
-        &:focus
-          &::after
-            @media(min-width: 1024px)
-              transform: translateY(-50%) rotate(-180deg)
-
-        &:focus,
-        &:focus-within
-          & + .main-menu__dropdown
-            display: block
+      &:focus,
+      &:focus-within
+        .main-menu__dropdown
+          display: block
 
       &:hover
+        //.main-menu__link
+        &::after
+          @media(min-width: 1024px)
+            transform: translateY(-50%) rotate(-180deg)
+
         .submenu
           @media(min-width: 1024px)
             display: block
 
       &:focus-within
+        //.main-menu__link
+        &::after
+          @media(min-width: 1024px)
+            transform: translateY(-50%) rotate(-180deg)
+
         .submenu
           @media(min-width: 1024px)
             display: block
