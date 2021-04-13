@@ -77,91 +77,192 @@
 
       <section class="page-section">
         <h2>Наши объекты</h2>
-        <ul class="objects">
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/school.jpg, images/content/objects/desktop/school.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/school.jpg" srcset="images/content/objects/school.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_2"></use></svg></span> Здание школы</span>
-                <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
-              </span>
-              <span class="object__place">Москва, САО</span>
-              <span class="object__address">Р-н Левобережный, мкр. 1Б, корп. 24</span>
-            </a>
-          </li>
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/house_1.jpg, images/content/objects/desktop/house_1.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/house_1.jpg" srcset="images/content/objects/house_1.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
-                <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
-              </span>
-              <span class="object__place">Москва, ВАО</span>
-              <span class="object__address">ул. Вешняковская, вл. 10</span>
-            </a>
-          </li>
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/house_2.jpg, images/content/objects/desktop/house_2.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/house_2.jpg" srcset="images/content/objects/house_2.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
-              </span>
-              <span class="object__place">Москва, ЮВАО</span>
-              <span class="object__address">ул. Вешняковская, вл. 10</span>
-            </a>
-          </li>
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/kindergarten.jpg, images/content/objects/desktop/kindergarten.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/kindergarten.jpg" srcset="images/content/objects/kindergarten.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_4"></use></svg></span> Детский сад</span>
-              </span>
-              <span class="object__place">Москва, ЮЗАО</span>
-              <span class="object__address">Южное Бутово</span>
-            </a>
-          </li>
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/home.jpg, images/content/objects/desktop/home.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/home.jpg" srcset="images/content/objects/home.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_3"></use></svg></span> Таунхаус</span>
-                <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
-              </span>
-              <span class="object__place">Московская обл.</span>
-              <span class="object__address">Ленинский район, Сосенский с/о, 5 км Калужского шоссе</span>
-            </a>
-          </li>
-          <li class="objects__item">
-            <a class="object" href="#">
-              <picture class="object__picture">
-                <source srcset="images/content/objects/desktop/cafe.jpg, images/content/objects/desktop/cafe.jpg 2x" media="(min-width: 1024px)">
-                <img class="object__image" src="images/content/objects/cafe.jpg" srcset="images/content/objects/cafe.jpg 2x" alt="alt">
-              </picture>
-              <span class="object__tags">
-                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_5"></use></svg></span> Кафе</span>
-              </span>
-              <span class="object__place">г. Зеленоград</span>
-              <span class="object__address">Центральный проспект, корп. 480</span>
-            </a>
-          </li>
+        <ul class="tabs-nav" data-tabs="1">
+          <li class="tabs-nav__item"><a class="js-tabs tabs-nav__link is-active" href="#" data-target="1">Административные</a></li>
+          <li class="tabs-nav__item"><a class="js-tabs tabs-nav__link" href="#" data-target="2">Социальные</a></li>
+          <li class="tabs-nav__item"><a class="js-tabs tabs-nav__link" href="#" data-target="3">Коммерческие</a></li>
         </ul>
-        <p class="more-block"><a class="button" href="#">все объекты</a></p>
+        <div class="tabs" data-tabs="1">
+          <div class="tab is-active" data-target="1">
+            <ul class="objects">
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/school.jpg, images/content/objects/desktop/school.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/school.jpg" srcset="images/content/objects/school.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_2"></use></svg></span> Здание школы</span>
+                    <button class="object__camera-button" type="button" data-src="https://www.youtube.com/watch?v=KfbNx3iSnus" data-fancybox="camera_1"><svg><use xlink:href="#camera"></use></svg></button>
+                  </span>
+                  <span class="object__place">Москва, САО</span>
+                  <span class="object__address">Р-н Левобережный, мкр. 1Б, корп. 24</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/house_1.jpg, images/content/objects/desktop/house_1.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/house_1.jpg" srcset="images/content/objects/house_1.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+                    <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+                  </span>
+                  <span class="object__place">Москва, ВАО</span>
+                  <span class="object__address">ул. Вешняковская, вл. 10</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/house_2.jpg, images/content/objects/desktop/house_2.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/house_2.jpg" srcset="images/content/objects/house_2.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+                  </span>
+                  <span class="object__place">Москва, ЮВАО</span>
+                  <span class="object__address">ул. Вешняковская, вл. 10</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/kindergarten.jpg, images/content/objects/desktop/kindergarten.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/kindergarten.jpg" srcset="images/content/objects/kindergarten.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_4"></use></svg></span> Детский сад</span>
+                  </span>
+                  <span class="object__place">Москва, ЮЗАО</span>
+                  <span class="object__address">Южное Бутово</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/home.jpg, images/content/objects/desktop/home.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/home.jpg" srcset="images/content/objects/home.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_3"></use></svg></span> Таунхаус</span>
+                    <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+                  </span>
+                  <span class="object__place">Московская обл.</span>
+                  <span class="object__address">Ленинский район, Сосенский с/о, 5 км Калужского шоссе</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/cafe.jpg, images/content/objects/desktop/cafe.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/cafe.jpg" srcset="images/content/objects/cafe.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_5"></use></svg></span> Кафе</span>
+                  </span>
+                  <span class="object__place">г. Зеленоград</span>
+                  <span class="object__address">Центральный проспект, корп. 480</span>
+                </a>
+              </li>
+            </ul>
+            <p class="more-block"><a class="button" href="objects.html">все объекты</a></p>
+          </div>
+          <div class="tab" data-target="2">
+            <ul class="objects">
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/kindergarten.jpg, images/content/objects/desktop/kindergarten.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/kindergarten.jpg" srcset="images/content/objects/kindergarten.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_4"></use></svg></span> Детский сад</span>
+                  </span>
+                  <span class="object__place">Москва, ЮЗАО</span>
+                  <span class="object__address">Южное Бутово</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/home.jpg, images/content/objects/desktop/home.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/home.jpg" srcset="images/content/objects/home.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_3"></use></svg></span> Таунхаус</span>
+                    <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+                  </span>
+                  <span class="object__place">Московская обл.</span>
+                  <span class="object__address">Ленинский район, Сосенский с/о, 5 км Калужского шоссе</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/cafe.jpg, images/content/objects/desktop/cafe.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/cafe.jpg" srcset="images/content/objects/cafe.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_5"></use></svg></span> Кафе</span>
+                  </span>
+                  <span class="object__place">г. Зеленоград</span>
+                  <span class="object__address">Центральный проспект, корп. 480</span>
+                </a>
+              </li>
+            </ul>
+            <p class="more-block"><a class="button" href="objects.html">все объекты</a></p>
+          </div>
+          <div class="tab" data-target="3">
+            <ul class="objects">
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/house_1.jpg, images/content/objects/desktop/house_1.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/house_1.jpg" srcset="images/content/objects/house_1.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+                    <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+                  </span>
+                  <span class="object__place">Москва, ВАО</span>
+                  <span class="object__address">ул. Вешняковская, вл. 10</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/house_2.jpg, images/content/objects/desktop/house_2.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/house_2.jpg" srcset="images/content/objects/house_2.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+                  </span>
+                  <span class="object__place">Москва, ЮВАО</span>
+                  <span class="object__address">ул. Вешняковская, вл. 10</span>
+                </a>
+              </li>
+              <li class="objects__item">
+                <a class="object" href="#">
+                  <picture class="object__picture">
+                    <source srcset="images/content/objects/desktop/kindergarten.jpg, images/content/objects/desktop/kindergarten.jpg 2x" media="(min-width: 1024px)">
+                    <img class="object__image" src="images/content/objects/kindergarten.jpg" srcset="images/content/objects/kindergarten.jpg 2x" alt="alt">
+                  </picture>
+                  <span class="object__tags">
+                    <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_4"></use></svg></span> Детский сад</span>
+                  </span>
+                  <span class="object__place">Москва, ЮЗАО</span>
+                  <span class="object__address">Южное Бутово</span>
+                </a>
+              </li>
+            </ul>
+            <p class="more-block"><a class="button" href="objects.html">все объекты</a></p>
+          </div>
+        </div>
       </section>
+
+      <section id="objects_map" class="objects-map"></section>
 
       <section class="page-section">
         <h2>Строительство</h2>
@@ -299,6 +400,8 @@
   //= template/scripts.html
   <script src="js/preloader.js"></script>
   <script src="js/page-banner.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/objects-map.js"></script>
 </body>
 
 </html>

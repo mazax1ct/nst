@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Объекты</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+        <li>Объекты</li>
+      </ul>
+      <h1>Объекты</h1>
+
+      <section class="page-section">
+        <ul class="objects">
+          <li class="objects__item">
+            <div class="filter">
+              <p class="filter__title">Фильтрация объектов</p>
+              <button class="js-filter-opener filter__opener" type="button" title="Открыть фильтр"><svg><use xlink:href="#filter"></use></svg> Фильтрация объектов</button>
+              <div class="filter__body">
+                <form class="filter__body-inner" method="get" action="">
+                  <button class="js-filter-closer filter__close" type="button" title="Закрыть фильтр"><span></span></button>
+                  <p class="filter__section-title">Тип объекта:</p>
+                  <ul class="filter__menu">
+                    <li class="filter__menu-item"><a class="filter__menu-link is-active" href="#">Все</a></li>
+                    <li class="filter__menu-item"><a class="filter__menu-link" href="#">Административные</a></li>
+                    <li class="filter__menu-item"><a class="filter__menu-link" href="#">Социальные</a></li>
+                    <li class="filter__menu-item"><a class="filter__menu-link" href="#">Коммерческие</a></li>
+                  </ul>
+                  <p class="filter__section-title">Локация:</p>
+                  <ul class="filter__menu">
+                    <li class="filter__menu-item">
+                      <label class="filter__menu-label">
+                        <input type="checkbox" name="loc" value="loc_1" checked>
+                        <span class="filter__menu-label-text">Все</span>
+                      </label>
+                    </li>
+                    <li class="filter__menu-item">
+                      <label class="filter__menu-label">
+                        <input type="checkbox" name="loc" value="loc_2">
+                        <span class="filter__menu-label-text">ЗАО</span>
+                      </label>
+                    </li>
+                    <li class="filter__menu-item">
+                      <label class="filter__menu-label">
+                        <input type="checkbox" name="loc" value="loc_3">
+                        <span class="filter__menu-label-text">САО</span>
+                      </label>
+                    </li>
+                    <li class="filter__menu-item">
+                      <label class="filter__menu-label">
+                        <input type="checkbox" name="loc" value="loc_4">
+                        <span class="filter__menu-label-text">СЗАО</span>
+                      </label>
+                    </li>
+                    <li class="filter__menu-item">
+                      <label class="filter__menu-label">
+                        <input type="checkbox" name="loc" value="loc_5">
+                        <span class="filter__menu-label-text">ЮАО</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <p class="filter__section-title">Сдан в эксплуатацию:</p>
+                  <ul class="filter__checkboxes">
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_1" checked>
+                        <span class="filter__checkboxes-label-text">Все</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_2">
+                        <span class="filter__checkboxes-label-text">2018</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_3">
+                        <span class="filter__checkboxes-label-text">2017</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_4">
+                        <span class="filter__checkboxes-label-text">2016</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_5">
+                        <span class="filter__checkboxes-label-text">2015</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_6">
+                        <span class="filter__checkboxes-label-text">2014</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_7">
+                        <span class="filter__checkboxes-label-text">2013</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_8">
+                        <span class="filter__checkboxes-label-text">2012</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_9">
+                        <span class="filter__checkboxes-label-text">2011</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_10">
+                        <span class="filter__checkboxes-label-text">2010</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_11">
+                        <span class="filter__checkboxes-label-text">2009</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_12">
+                        <span class="filter__checkboxes-label-text">2008</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_13">
+                        <span class="filter__checkboxes-label-text">2007</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_14">
+                        <span class="filter__checkboxes-label-text">2006</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_15">
+                        <span class="filter__checkboxes-label-text">2005</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_16">
+                        <span class="filter__checkboxes-label-text">2004</span>
+                      </label>
+                    </li>
+                    <li class="filter__checkboxes-item">
+                      <label class="filter__checkboxes-label">
+                        <input type="checkbox" name="year" value="year_17">
+                        <span class="filter__checkboxes-label-text">2003</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <button class="filter__reset" type="reset">Сбросить все параметры</button>
+                </form>
+              </div>
+              <div class="filter__results">
+                <button class="filter__result-reset" type="button">САО</button>
+                <button class="filter__result-reset" type="button">СЗАО</button>
+                <button class="filter__result-reset" type="button">2018</button>
+              </div>
+            </div>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/school.jpg, images/content/objects/desktop/school.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/school.jpg" srcset="images/content/objects/school.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_2"></use></svg></span> Здание школы</span>
+                <button class="object__camera-button" type="button" data-src="https://www.youtube.com/watch?v=KfbNx3iSnus" data-fancybox="camera_1"><svg><use xlink:href="#camera"></use></svg></button>
+              </span>
+              <span class="object__place">Москва, САО</span>
+              <span class="object__address">Р-н Левобережный, мкр. 1Б, корп. 24</span>
+            </a>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/house_1.jpg, images/content/objects/desktop/house_1.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/house_1.jpg" srcset="images/content/objects/house_1.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+                <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+              </span>
+              <span class="object__place">Москва, ВАО</span>
+              <span class="object__address">ул. Вешняковская, вл. 10</span>
+            </a>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/house_2.jpg, images/content/objects/desktop/house_2.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/house_2.jpg" srcset="images/content/objects/house_2.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_1"></use></svg></span> Жилой многоэтажный дом</span>
+              </span>
+              <span class="object__place">Москва, ЮВАО</span>
+              <span class="object__address">ул. Вешняковская, вл. 10</span>
+            </a>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/kindergarten.jpg, images/content/objects/desktop/kindergarten.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/kindergarten.jpg" srcset="images/content/objects/kindergarten.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_4"></use></svg></span> Детский сад</span>
+              </span>
+              <span class="object__place">Москва, ЮЗАО</span>
+              <span class="object__address">Южное Бутово</span>
+            </a>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/home.jpg, images/content/objects/desktop/home.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/home.jpg" srcset="images/content/objects/home.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_3"></use></svg></span> Таунхаус</span>
+                <button class="object__camera-button" type="button"><svg><use xlink:href="#camera"></use></svg></button>
+              </span>
+              <span class="object__place">Московская обл.</span>
+              <span class="object__address">Ленинский район, Сосенский с/о, 5 км Калужского шоссе</span>
+            </a>
+          </li>
+          <li class="objects__item">
+            <a class="object" href="#">
+              <picture class="object__picture">
+                <source srcset="images/content/objects/desktop/cafe.jpg, images/content/objects/desktop/cafe.jpg 2x" media="(min-width: 1024px)">
+                <img class="object__image" src="images/content/objects/cafe.jpg" srcset="images/content/objects/cafe.jpg 2x" alt="alt">
+              </picture>
+              <span class="object__tags">
+                <span class="object__tag"><span class="object__tag-icon"><svg><use xlink:href="#type_5"></use></svg></span> Кафе</span>
+              </span>
+              <span class="object__place">г. Зеленоград</span>
+              <span class="object__address">Центральный проспект, корп. 480</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="objects_map" class="objects-map"></section>
+
+      <section class="feedback">
+        <div class="feedback__image">
+          <img src="images/content/feedback/form.jpg" srcset="images/content/feedback/form@2x.jpg 2x" alt="alt">
+        </div>
+        <div class="feedback__form">
+          <h2>У Вас есть вопросы?<br> Оставьте заявку и мы с вами свяжемся</h2>
+          <form class="form" action="">
+            <div class="form__row">
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="user_name" value="" placeholder="Ваше имя"/>
+                </label>
+              </div>
+              <div class="form__row-cell">
+                <label>
+                  <input class="js-phone-mask input" type="text" name="user_phone" value="" placeholder="Номер телефона"/>
+                </label>
+              </div>
+            </div>
+            <label class="form__label">
+              <textarea class="textarea" name="message" placeholder="Сообщение..."></textarea>
+            </label>
+            <div class="form__button-block">
+              <button class="button" type="submit">отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+  <script src="js/preloader.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/objects-map.js"></script>
+</body>
+
+</html>
