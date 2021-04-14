@@ -1,0 +1,88 @@
+.simple-slider
+  position: relative
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1900px)
+      margin-bottom: 100px
+
+  &__picture,
+  &__image
+    display: block
+    width: 100%
+
+  .slick-slide
+    div
+      vertical-align: top
+
+  .slick-dots
+    bottom: 30px
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    list-style: none
+    left: 0
+    margin: 0
+    padding: 0 20px
+    position: absolute
+    top: auto
+    width: 100%
+    z-index: 3
+
+    li
+      margin: 0 5px 5px
+
+      &.slick-active
+        button
+          background-color: #fff
+          width: 30px
+
+    button
+      background-color: rgba(#fff, 0.3)
+      border-radius: 4px
+      border: none
+      color: transparent
+      cursor: pointer
+      display: block
+      font-size: 0
+      height: 8px
+      line-height: 0
+      padding: 0
+      overflow: hidden
+      transition: width 0.3s, background-color 0.3s
+      width: 8px
+
+  .slick-arrow
+    align-items: center
+    bottom: 20px
+    border: none
+    background-color: rgba(#000, 0.4)
+    cursor: pointer
+    display: flex
+    height: 60px
+    justify-content: center
+    padding: 0
+    position: absolute
+    transition: background-color 0.3s
+    top: auto
+    width: 60px
+    z-index: 1
+
+    &:hover,
+    &:focus
+      background-color: rgba(#000, 0.7)
+
+  .slick-arrow__arrow
+    fill: #fff
+    height: 20px
+    width: 20px
+
+  .slick-prev
+    left: auto
+    right: 80px
+
+  .slick-next
+    left: auto
+    right: 20px

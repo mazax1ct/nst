@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="141" viewBox="0 0 141 141">
+    <defs>
+        <filter id="1452" width="141" height="141" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="12.5"/>
+            <feFlood flood-color="#8592a9" flood-opacity=".502"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:#f9c030}
+        </style>
+    </defs>
+    <g id="pin_map" transform="translate(-472.5 -517.5)">
+        <g filter="url(#1452)" transform="translate(472.5 517.5)">
+          <path fill="#fff" d="M33 0A33 33 0 1 1 0 33 33 33 0 0 1 33 0z" transform="translate(37.5 37.5)"/>
+        </g>
+        <g transform="translate(262.154 555.199)">
+          <path d="M1135.489 483.88a3.406 3.406 0 1 0 6.811 0v-13.9h-6.811z" class="cls-2" transform="translate(-849.642 -436.697)"/>
+          <path fill="#1d1d1d" d="M1113.812 448.845l-19.357.033a13.488 13.488 0 0 0-8.387 23.571l.039.035a10.411 10.411 0 0 0 6.9 2.617h6.961a3.412 3.412 0 0 0 3.366-3.928 3.479 3.479 0 0 0-3.472-2.884h-5.508a6 6 0 0 1-6.044-5.5c-.009-.14-.013-.282-.013-.424a6.73 6.73 0 0 1 6.154-6.7l19.357-.011a3.406 3.406 0 1 0 0-6.811z" transform="translate(-818.526 -424.499)"/>
+          <path d="M1115.468 426.948a3.406 3.406 0 0 0-3.406 3.406v18.131a3.406 3.406 0 0 0 6.811 0v-18.131a3.406 3.406 0 0 0-3.405-3.406z" class="cls-2" transform="translate(-836.134 -411.948)"/>
+          <path d="M1088.712 437.237v-4.107a3.406 3.406 0 1 0-6.812 0v10.522a13.594 13.594 0 0 1 6.812-6.415z" class="cls-2" transform="translate(-818.742 -413.538)"/>
+        </g>
+    </g>
+</svg>

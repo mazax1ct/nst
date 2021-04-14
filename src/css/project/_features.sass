@@ -1,0 +1,50 @@
+.features
+  border: 1px solid $color-grey-1
+  font-size: 18px
+  margin-bottom: 60px
+  padding: 50px 20px 0
+  text-align: center
+
+  @media(min-width: 768px) and (max-width: 1199px)
+    font-size: 14px
+
+  @media(min-width: 1200px)
+    padding-left: 30px
+    padding-right: 30px
+
+  @media(min-width: 1900px)
+    margin-bottom: 100px
+    padding-left: 50px
+    padding-right: 50px
+    padding-top: 50px
+    padding-bottom: 20px
+
+  &__columns
+    @media(min-width: 768px)
+      display: flex
+      margin-left: -15px
+      margin-right: -15px
+
+    @media(min-width: 1900px)
+      margin-left: -25px
+      margin-right: -25px
+
+  &__column
+    margin-bottom: 50px
+
+    @media(min-width: 768px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 33.33333%
+
+    @media(min-width: 1900px)
+      padding-left: 25px
+      padding-right: 25px
+
+  img
+    margin-bottom: 20px
+
+  &__title
+    display: block
+    font-size: 26px
+    font-weight: 700

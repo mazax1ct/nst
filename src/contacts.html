@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Контакты</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+        <li>Контакты</li>
+      </ul>
+      <h1>Контакты</h1>
+
+      <div class="contacts">
+        <div class="contacts__form">
+          <div class="contacts__form-block">
+            <p class="contacts__form-title">Как с нами связаться?</p>
+            <p class="contacts__form-note">Выберите удобный способ связи или заполните форму.</p>
+            <p class="contacts__address-phone"><img src="images/icons/place.svg" alt=""> г. Химки, ул. Панфилова, вл. 19, стр. 1</p>
+            <p class="contacts__address-phone"><img src="images/icons/phone.svg" alt=""> <a href="tel:+74956170844">(495) 617-08-44</a></p>
+          </div>
+          <div class="contacts__form-block">
+            <form class="form" action="">
+              <label class="form__label">
+                <input class="input" type="text" name="user_name" value="" placeholder="Имя">
+              </label>
+              <label class="form__label">
+                <input class="js-phone-mask input" type="text" name="user_phone" value="" placeholder="Номер телефона">
+              </label>
+              <button class="button" type="submit">отправить заявку</button>
+            </form>
+          </div>
+        </div>
+        <div id="contacts_map" class="contacts__map"></div>
+      </div>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+  <script src="js/preloader.js"></script>
+  <script src="js/contacts-map.js"></script>
+</body>
+
+</html>

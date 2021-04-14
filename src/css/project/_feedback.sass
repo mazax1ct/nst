@@ -1,6 +1,5 @@
 .feedback
   border: 1px solid $color-grey-1
-  margin-bottom: 60px
   padding: 30px 20px
 
   @media(min-width: 1024px)
@@ -13,7 +12,12 @@
 
   @media(min-width: 1900px)
     padding: 70px
-    margin-bottom: 100px
+
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: 1900px)
+      margin-bottom: 100px
 
   &__image
     display: none
