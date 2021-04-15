@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Вакансия детально - крановщик</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="vacancies.html">Вакансии</a></li>
+        <li>Крановщик</li>
+      </ul>
+      <h1>Крановщик</h1>
+
+      <div class="simple-banner">
+        <picture class="simple-banner__picture">
+          <source srcset="images/content/vacancies/crane_operator.jpg, images/content/vacancies/crane_operator@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="simple-banner__image" src="images/content/vacancies/crane_operator_mob.jpg" srcset="images/content/vacancies/crane_operator_mob@2x.jpg 2x" alt="alt">
+        </picture>
+      </div>
+
+      <div class="vacancy-detail">
+        <div class="vacancy-detail__left">
+          <p class="vacancy-detail__location"><svg><use xlink:href="#pin"></use></svg> Москва</p>
+          <h2 class="h3">ЕСЛИ ВЫ:</h2>
+          <ul>
+            <li>опыт работы от 2-х лет обязательно;</li>
+            <li>знание устройства, принципа работы крана;</li>
+            <li>ответственность и исполнительность;</li>
+            <li>без вредных привычек.</li>
+          </ul>
+          <h2 class="h3">ОБЯЗАННОСТИ:</h2>
+          <ul>
+            <li>знание устройства, принципа работы крана;</li>
+            <li>ответственность и исполнительность;</li>
+            <li>без вредных привычек.</li>
+          </ul>
+          <h2 class="h3">МЫ ПРЕДЛАГАЕМ:</h2>
+          <ul>
+            <li>место работы: Ходосеевка, Новообуховское шоссе 1 (от метро Выдубичи 20 мин.)</li>
+            <li>график работы 6/7, с 08:00 до 17:00 либо рассматриваем посменный (вахтовый) график работы — нед./нед.</li>
+            <li>комфортная атмосфера в коллективе;</li>
+            <li>стабильность в работе.</li>
+          </ul>
+        </div>
+        <div class="vacancy-detail__right">
+          <form class="vacancy-detail__form form">
+            <p class="vacancy-detail__form-title">Я ТОТ, КТО ВАМ НУЖЕН!</p>
+            <p class="vacancy-detail__form-subtitle">о себе</p>
+            <div class="form__row">
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="user_name" value="" placeholder="ФИО*"/>
+                </label>
+              </div>
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="user_email" value="" placeholder="Email*"/>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__row-cell">
+                <label>
+                  <input class="js-phone-mask input" type="text" name="user_phone" value="" placeholder="Телефон*"/>
+                </label>
+              </div>
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="user_age" value="" placeholder="Возраст"/>
+                </label>
+              </div>
+            </div>
+            <p class="vacancy-detail__form-subtitle">образование</p>
+            <label>
+              <input class="input" type="text" name="user_spec" value="" placeholder="Учебное заведение и специальность"/>
+            </label>
+            <p class="text-right"><button class="form__add-button" type="button">Добавить еще одно место учебы</button></p>
+            <p class="vacancy-detail__form-subtitle">опыт работы</p>
+            <div class="form__row">
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="company" value="" placeholder="Компания"/>
+                </label>
+              </div>
+              <div class="form__row-cell">
+                <label>
+                  <input class="input" type="text" name="place" value="" placeholder="Должность"/>
+                </label>
+              </div>
+            </div>
+            <label>
+              <textarea class="textarea" name="progress" placeholder="В чем вы преуспели на этой должности"></textarea>
+            </label>
+            <p class="text-right"><button class="form__add-button" type="button">Добавить еще одно место работы</button></p>
+            <label class="file">
+              <input class="js-upload-file" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано">
+              <span class="file__text">Прикрепить резюме</span>
+            </label>
+            <div class="vacancy-detail__form-terms-block">
+              <label class="checkbox-label">
+                <input name="terms" type="checkbox" checked/>
+                <span class="checkbox-label__icon"></span>
+                <span class="checkbox-label__text">Я согласен(а) с <a href="#" target="_blank">Пользовательским соглашением</a></span>
+              </label>
+              <button class="button" type="submit">отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+  <script src="js/preloader.js"></script>
+</body>
+
+</html>
