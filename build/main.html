@@ -131,14 +131,16 @@
     <section class="page-banner">
       <div class="js-page-banner page-banner__slider">
         <div class="page-banner__slide">
-          <picture class="page-banner__slide-picture">
-            <source srcset="images/content/banner/banner.jpg, images/content/banner/banner@2x.jpg 2x" media="(min-width: 768px)">
-            <img class="page-banner__slide-image" src="images/content/banner/banner_mobile.jpg" srcset="images/content/banner/banner_mobile@2x.jpg 2x" alt="alt">
-          </picture>
-          <div class="page-banner__slide-container">
-            <p class="page-banner__slide-city">Москва</p>
-            <p class="page-banner__slide-title">ЮВАО, ул. Шумилова, вл. 16, корп. 2</p>
-          </div>
+          <a href="#">
+            <picture class="page-banner__slide-picture">
+              <source srcset="images/content/banner/banner.jpg, images/content/banner/banner@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="page-banner__slide-image" src="images/content/banner/banner_mobile.jpg" srcset="images/content/banner/banner_mobile@2x.jpg 2x" alt="alt">
+            </picture>
+            <div class="page-banner__slide-container">
+              <p class="page-banner__slide-city">Москва</p>
+              <p class="page-banner__slide-title">ЮВАО, ул. Шумилова, вл. 16, корп. 2</p>
+            </div>
+          </a>
         </div>
         <div class="page-banner__slide">
           <picture class="page-banner__slide-picture">
@@ -406,7 +408,7 @@
             <div class="form__row">
               <div class="form__row-cell">
                 <label>
-                  <input class="input" type="text" name="user_name" value="" placeholder="Ваше имя"/>
+                  <input class="input error" type="text" name="user_name" value="" placeholder="Ваше имя"/>
                 </label>
               </div>
               <div class="form__row-cell">
@@ -417,6 +419,11 @@
             </div>
             <label class="form__label">
               <textarea class="textarea" name="message" placeholder="Сообщение..."></textarea>
+            </label>
+            <label class="form__label checkbox-label">
+              <input name="terms" type="checkbox" checked/>
+              <span class="checkbox-label__icon"></span>
+              <span class="checkbox-label__text">Я согласен(а) с <a href="#" target="_blank">Пользовательским соглашением</a></span>
             </label>
             <div class="form__button-block">
               <button class="button" type="submit">отправить заявку</button>
